@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6335C8A2BE2389F0078C0A6 /* stinklessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335C892BE2389F0078C0A6 /* stinklessApp.swift */; };
+		B6335C8C2BE2389F0078C0A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335C8B2BE2389F0078C0A6 /* ContentView.swift */; };
+		B6335C8E2BE238A10078C0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6335C8D2BE238A10078C0A6 /* Assets.xcassets */; };
+		B6335C912BE238A10078C0A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6335C902BE238A10078C0A6 /* Preview Assets.xcassets */; };
+		B6335C932BE238A10078C0A6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335C922BE238A10078C0A6 /* Persistence.swift */; };
+		B6335C962BE238A10078C0A6 /* stinkless.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6335C942BE238A10078C0A6 /* stinkless.xcdatamodeld */; };
+		B6335CA12BE24AE40078C0A6 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CA02BE24AE40078C0A6 /* AppTabView.swift */; };
+		B6335CA32BE24B080078C0A6 /* CurrentStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CA22BE24B080078C0A6 /* CurrentStateView.swift */; };
+		B6335CA52BE24B130078C0A6 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CA42BE24B130078C0A6 /* HistoryView.swift */; };
+		B6335CA72BE2593C0078C0A6 /* defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CA62BE2593C0078C0A6 /* defaults.swift */; };
+		B6335CA92BE265720078C0A6 /* WeeklySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CA82BE265720078C0A6 /* WeeklySummaryView.swift */; };
+		B6335CAB2BE267C60078C0A6 /* calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CAA2BE267C60078C0A6 /* calendar.swift */; };
+		B6335CAD2BE28C4B0078C0A6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CAC2BE28C4A0078C0A6 /* SettingsView.swift */; };
+		B6335CAF2BE2C51F0078C0A6 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CAE2BE2C51F0078C0A6 /* WeekView.swift */; };
+		B6335CB12BE2C6A30078C0A6 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CB02BE2C6A30078C0A6 /* DayView.swift */; };
+		B6335CB42BE2D5030078C0A6 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CB32BE2D5030078C0A6 /* ItemView.swift */; };
+		B6335CD82BE2E3680078C0A6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6335CBC2BE2DF440078C0A6 /* WidgetKit.framework */; };
+		B6335CD92BE2E3680078C0A6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6335CBE2BE2DF450078C0A6 /* SwiftUI.framework */; };
+		B6335CDC2BE2E3680078C0A6 /* stinkless_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CDB2BE2E3680078C0A6 /* stinkless_widgetBundle.swift */; };
+		B6335CDE2BE2E3680078C0A6 /* stinkless_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CDD2BE2E3680078C0A6 /* stinkless_widget.swift */; };
+		B6335CE42BE2E3690078C0A6 /* stinkless-widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B6335CD72BE2E3680078C0A6 /* stinkless-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B6335CEB2BE2E7360078C0A6 /* WidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CE92BE2E69F0078C0A6 /* WidgetEntryView.swift */; };
+		B6335CEE2BE2EBB10078C0A6 /* widgetIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CED2BE2EBB10078C0A6 /* widgetIntents.swift */; };
+		B6335CEF2BE2ED250078C0A6 /* widgetIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CED2BE2EBB10078C0A6 /* widgetIntents.swift */; };
+		B6335CF02BE2EE2E0078C0A6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335C922BE238A10078C0A6 /* Persistence.swift */; };
+		B6335CF12BE2EE5C0078C0A6 /* stinkless.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6335C942BE238A10078C0A6 /* stinkless.xcdatamodeld */; };
+		B6335CF42BE304B70078C0A6 /* CurrValueAndGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CF32BE304B70078C0A6 /* CurrValueAndGoalView.swift */; };
+		B6335CF52BE304E00078C0A6 /* defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CA62BE2593C0078C0A6 /* defaults.swift */; };
+		B6335CF62BE305240078C0A6 /* CurrValueAndGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CF32BE304B70078C0A6 /* CurrValueAndGoalView.swift */; };
+		B6335CF82BE3055E0078C0A6 /* AddRemoveItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CF72BE3055E0078C0A6 /* AddRemoveItemsView.swift */; };
+		B6335CFB2BE3068C0078C0A6 /* AddRemoveItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CF72BE3055E0078C0A6 /* AddRemoveItemsView.swift */; };
+		B6335CFD2BE3095B0078C0A6 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CFC2BE3095B0078C0A6 /* ProgressBarView.swift */; };
+		B6335CFF2BE30ACB0078C0A6 /* ResetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CFE2BE30ACB0078C0A6 /* ResetButtonView.swift */; };
+		B6335D002BE30C0E0078C0A6 /* ResetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CFE2BE30ACB0078C0A6 /* ResetButtonView.swift */; };
+		B6335D012BE30C100078C0A6 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CFC2BE3095B0078C0A6 /* ProgressBarView.swift */; };
+		B6335D022BE30CD20078C0A6 /* calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335CAA2BE267C60078C0A6 /* calendar.swift */; };
+		B6335D052BE382ED0078C0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6335CDF2BE2E3690078C0A6 /* Assets.xcassets */; };
+		B6335D082BE38DC60078C0A6 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6335D062BE38D760078C0A6 /* View.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6335CE22BE2E3690078C0A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6335C7E2BE2389F0078C0A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6335CD62BE2E3680078C0A6;
+			remoteInfo = "stinkless-widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6335CD22BE2DF460078C0A6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B6335CE42BE2E3690078C0A6 /* stinkless-widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B6335C862BE2389F0078C0A6 /* stinkless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stinkless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6335C892BE2389F0078C0A6 /* stinklessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stinklessApp.swift; sourceTree = "<group>"; };
+		B6335C8B2BE2389F0078C0A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6335C8D2BE238A10078C0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6335C902BE238A10078C0A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6335C922BE238A10078C0A6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B6335C952BE238A10078C0A6 /* stinkless.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stinkless.xcdatamodel; sourceTree = "<group>"; };
+		B6335CA02BE24AE40078C0A6 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		B6335CA22BE24B080078C0A6 /* CurrentStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateView.swift; sourceTree = "<group>"; };
+		B6335CA42BE24B130078C0A6 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		B6335CA62BE2593C0078C0A6 /* defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaults.swift; sourceTree = "<group>"; };
+		B6335CA82BE265720078C0A6 /* WeeklySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklySummaryView.swift; sourceTree = "<group>"; };
+		B6335CAA2BE267C60078C0A6 /* calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar.swift; sourceTree = "<group>"; };
+		B6335CAC2BE28C4A0078C0A6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B6335CAE2BE2C51F0078C0A6 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		B6335CB02BE2C6A30078C0A6 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		B6335CB32BE2D5030078C0A6 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		B6335CBC2BE2DF440078C0A6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B6335CBE2BE2DF450078C0A6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B6335CD72BE2E3680078C0A6 /* stinkless-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "stinkless-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6335CDB2BE2E3680078C0A6 /* stinkless_widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stinkless_widgetBundle.swift; sourceTree = "<group>"; };
+		B6335CDD2BE2E3680078C0A6 /* stinkless_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stinkless_widget.swift; sourceTree = "<group>"; };
+		B6335CDF2BE2E3690078C0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6335CE12BE2E3690078C0A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6335CE82BE2E3F30078C0A6 /* stinkless.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stinkless.entitlements; sourceTree = "<group>"; };
+		B6335CE92BE2E69F0078C0A6 /* WidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntryView.swift; sourceTree = "<group>"; };
+		B6335CEC2BE2E8A90078C0A6 /* stinkless-widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "stinkless-widgetExtension.entitlements"; sourceTree = "<group>"; };
+		B6335CED2BE2EBB10078C0A6 /* widgetIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetIntents.swift; sourceTree = "<group>"; };
+		B6335CF32BE304B70078C0A6 /* CurrValueAndGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrValueAndGoalView.swift; sourceTree = "<group>"; };
+		B6335CF72BE3055E0078C0A6 /* AddRemoveItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRemoveItemsView.swift; sourceTree = "<group>"; };
+		B6335CFC2BE3095B0078C0A6 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		B6335CFE2BE30ACB0078C0A6 /* ResetButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetButtonView.swift; sourceTree = "<group>"; };
+		B6335D062BE38D760078C0A6 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6335C832BE2389F0078C0A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6335CD42BE2E3680078C0A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6335CD92BE2E3680078C0A6 /* SwiftUI.framework in Frameworks */,
+				B6335CD82BE2E3680078C0A6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6335C7D2BE2389F0078C0A6 = {
+			isa = PBXGroup;
+			children = (
+				B6335CEC2BE2E8A90078C0A6 /* stinkless-widgetExtension.entitlements */,
+				B6335C882BE2389F0078C0A6 /* stinkless */,
+				B6335CDA2BE2E3680078C0A6 /* stinkless-widget */,
+				B6335CBB2BE2DF440078C0A6 /* Frameworks */,
+				B6335C872BE2389F0078C0A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6335C872BE2389F0078C0A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6335C862BE2389F0078C0A6 /* stinkless.app */,
+				B6335CD72BE2E3680078C0A6 /* stinkless-widgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6335C882BE2389F0078C0A6 /* stinkless */ = {
+			isa = PBXGroup;
+			children = (
+				B6335CE82BE2E3F30078C0A6 /* stinkless.entitlements */,
+				B6335C892BE2389F0078C0A6 /* stinklessApp.swift */,
+				B6335C8B2BE2389F0078C0A6 /* ContentView.swift */,
+				B6335CA02BE24AE40078C0A6 /* AppTabView.swift */,
+				B6335CA22BE24B080078C0A6 /* CurrentStateView.swift */,
+				B6335CF22BE3046B0078C0A6 /* CurrentStateView comps */,
+				B6335CA82BE265720078C0A6 /* WeeklySummaryView.swift */,
+				B6335CB22BE2C6B20078C0A6 /* WeeklySummaryView comps */,
+				B6335CA42BE24B130078C0A6 /* HistoryView.swift */,
+				B6335CB52BE2D50A0078C0A6 /* HistoryView comps */,
+				B6335CAC2BE28C4A0078C0A6 /* SettingsView.swift */,
+				B6335C8D2BE238A10078C0A6 /* Assets.xcassets */,
+				B6335C922BE238A10078C0A6 /* Persistence.swift */,
+				B6335CAA2BE267C60078C0A6 /* calendar.swift */,
+				B6335CA62BE2593C0078C0A6 /* defaults.swift */,
+				B6335C942BE238A10078C0A6 /* stinkless.xcdatamodeld */,
+				B6335C8F2BE238A10078C0A6 /* Preview Content */,
+			);
+			path = stinkless;
+			sourceTree = "<group>";
+		};
+		B6335C8F2BE238A10078C0A6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B6335C902BE238A10078C0A6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6335CB22BE2C6B20078C0A6 /* WeeklySummaryView comps */ = {
+			isa = PBXGroup;
+			children = (
+				B6335CAE2BE2C51F0078C0A6 /* WeekView.swift */,
+				B6335CB02BE2C6A30078C0A6 /* DayView.swift */,
+			);
+			path = "WeeklySummaryView comps";
+			sourceTree = "<group>";
+		};
+		B6335CB52BE2D50A0078C0A6 /* HistoryView comps */ = {
+			isa = PBXGroup;
+			children = (
+				B6335CB32BE2D5030078C0A6 /* ItemView.swift */,
+			);
+			path = "HistoryView comps";
+			sourceTree = "<group>";
+		};
+		B6335CBB2BE2DF440078C0A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6335CBC2BE2DF440078C0A6 /* WidgetKit.framework */,
+				B6335CBE2BE2DF450078C0A6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6335CDA2BE2E3680078C0A6 /* stinkless-widget */ = {
+			isa = PBXGroup;
+			children = (
+				B6335CDB2BE2E3680078C0A6 /* stinkless_widgetBundle.swift */,
+				B6335CDD2BE2E3680078C0A6 /* stinkless_widget.swift */,
+				B6335CE92BE2E69F0078C0A6 /* WidgetEntryView.swift */,
+				B6335CED2BE2EBB10078C0A6 /* widgetIntents.swift */,
+				B6335D062BE38D760078C0A6 /* View.swift */,
+				B6335CDF2BE2E3690078C0A6 /* Assets.xcassets */,
+				B6335CE12BE2E3690078C0A6 /* Info.plist */,
+			);
+			path = "stinkless-widget";
+			sourceTree = "<group>";
+		};
+		B6335CF22BE3046B0078C0A6 /* CurrentStateView comps */ = {
+			isa = PBXGroup;
+			children = (
+				B6335CF32BE304B70078C0A6 /* CurrValueAndGoalView.swift */,
+				B6335CF72BE3055E0078C0A6 /* AddRemoveItemsView.swift */,
+				B6335CFC2BE3095B0078C0A6 /* ProgressBarView.swift */,
+				B6335CFE2BE30ACB0078C0A6 /* ResetButtonView.swift */,
+			);
+			path = "CurrentStateView comps";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6335C852BE2389F0078C0A6 /* stinkless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6335C992BE238A10078C0A6 /* Build configuration list for PBXNativeTarget "stinkless" */;
+			buildPhases = (
+				B6335C822BE2389F0078C0A6 /* Sources */,
+				B6335C832BE2389F0078C0A6 /* Frameworks */,
+				B6335C842BE2389F0078C0A6 /* Resources */,
+				B6335CD22BE2DF460078C0A6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6335CE32BE2E3690078C0A6 /* PBXTargetDependency */,
+			);
+			name = stinkless;
+			productName = stinkless;
+			productReference = B6335C862BE2389F0078C0A6 /* stinkless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6335CD62BE2E3680078C0A6 /* stinkless-widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6335CE52BE2E3690078C0A6 /* Build configuration list for PBXNativeTarget "stinkless-widgetExtension" */;
+			buildPhases = (
+				B6335CD32BE2E3680078C0A6 /* Sources */,
+				B6335CD42BE2E3680078C0A6 /* Frameworks */,
+				B6335CD52BE2E3680078C0A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "stinkless-widgetExtension";
+			productName = "stinkless-widgetExtension";
+			productReference = B6335CD72BE2E3680078C0A6 /* stinkless-widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6335C7E2BE2389F0078C0A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B6335C852BE2389F0078C0A6 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B6335CD62BE2E3680078C0A6 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = B6335C812BE2389F0078C0A6 /* Build configuration list for PBXProject "stinkless" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6335C7D2BE2389F0078C0A6;
+			productRefGroup = B6335C872BE2389F0078C0A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6335C852BE2389F0078C0A6 /* stinkless */,
+				B6335CD62BE2E3680078C0A6 /* stinkless-widgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6335C842BE2389F0078C0A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6335C912BE238A10078C0A6 /* Preview Assets.xcassets in Resources */,
+				B6335C8E2BE238A10078C0A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6335CD52BE2E3680078C0A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6335D052BE382ED0078C0A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6335C822BE2389F0078C0A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6335CAF2BE2C51F0078C0A6 /* WeekView.swift in Sources */,
+				B6335CFD2BE3095B0078C0A6 /* ProgressBarView.swift in Sources */,
+				B6335CA32BE24B080078C0A6 /* CurrentStateView.swift in Sources */,
+				B6335CB12BE2C6A30078C0A6 /* DayView.swift in Sources */,
+				B6335CEF2BE2ED250078C0A6 /* widgetIntents.swift in Sources */,
+				B6335CA72BE2593C0078C0A6 /* defaults.swift in Sources */,
+				B6335C932BE238A10078C0A6 /* Persistence.swift in Sources */,
+				B6335C8C2BE2389F0078C0A6 /* ContentView.swift in Sources */,
+				B6335C962BE238A10078C0A6 /* stinkless.xcdatamodeld in Sources */,
+				B6335CA92BE265720078C0A6 /* WeeklySummaryView.swift in Sources */,
+				B6335C8A2BE2389F0078C0A6 /* stinklessApp.swift in Sources */,
+				B6335CA12BE24AE40078C0A6 /* AppTabView.swift in Sources */,
+				B6335CA52BE24B130078C0A6 /* HistoryView.swift in Sources */,
+				B6335CB42BE2D5030078C0A6 /* ItemView.swift in Sources */,
+				B6335CFF2BE30ACB0078C0A6 /* ResetButtonView.swift in Sources */,
+				B6335CAB2BE267C60078C0A6 /* calendar.swift in Sources */,
+				B6335CAD2BE28C4B0078C0A6 /* SettingsView.swift in Sources */,
+				B6335CF42BE304B70078C0A6 /* CurrValueAndGoalView.swift in Sources */,
+				B6335CF82BE3055E0078C0A6 /* AddRemoveItemsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6335CD32BE2E3680078C0A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6335D082BE38DC60078C0A6 /* View.swift in Sources */,
+				B6335CDE2BE2E3680078C0A6 /* stinkless_widget.swift in Sources */,
+				B6335CEB2BE2E7360078C0A6 /* WidgetEntryView.swift in Sources */,
+				B6335CF52BE304E00078C0A6 /* defaults.swift in Sources */,
+				B6335D022BE30CD20078C0A6 /* calendar.swift in Sources */,
+				B6335CF12BE2EE5C0078C0A6 /* stinkless.xcdatamodeld in Sources */,
+				B6335CDC2BE2E3680078C0A6 /* stinkless_widgetBundle.swift in Sources */,
+				B6335D012BE30C100078C0A6 /* ProgressBarView.swift in Sources */,
+				B6335CEE2BE2EBB10078C0A6 /* widgetIntents.swift in Sources */,
+				B6335CF02BE2EE2E0078C0A6 /* Persistence.swift in Sources */,
+				B6335CF62BE305240078C0A6 /* CurrValueAndGoalView.swift in Sources */,
+				B6335D002BE30C0E0078C0A6 /* ResetButtonView.swift in Sources */,
+				B6335CFB2BE3068C0078C0A6 /* AddRemoveItemsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6335CE32BE2E3690078C0A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6335CD62BE2E3680078C0A6 /* stinkless-widgetExtension */;
+			targetProxy = B6335CE22BE2E3690078C0A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B6335C972BE238A10078C0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6335C982BE238A10078C0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6335C9A2BE238A10078C0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = stinkless/stinkless.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"stinkless/Preview Content\"";
+				DEVELOPMENT_TEAM = KWRUV8J5SB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariia.stinkless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6335C9B2BE238A10078C0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = stinkless/stinkless.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"stinkless/Preview Content\"";
+				DEVELOPMENT_TEAM = KWRUV8J5SB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariia.stinkless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6335CE62BE2E3690078C0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "stinkless-widgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KWRUV8J5SB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "stinkless-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "stinkless-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mariia.stinkless.stinkless-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6335CE72BE2E3690078C0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "stinkless-widgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KWRUV8J5SB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "stinkless-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "stinkless-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mariia.stinkless.stinkless-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6335C812BE2389F0078C0A6 /* Build configuration list for PBXProject "stinkless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6335C972BE238A10078C0A6 /* Debug */,
+				B6335C982BE238A10078C0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6335C992BE238A10078C0A6 /* Build configuration list for PBXNativeTarget "stinkless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6335C9A2BE238A10078C0A6 /* Debug */,
+				B6335C9B2BE238A10078C0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6335CE52BE2E3690078C0A6 /* Build configuration list for PBXNativeTarget "stinkless-widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6335CE62BE2E3690078C0A6 /* Debug */,
+				B6335CE72BE2E3690078C0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6335C942BE238A10078C0A6 /* stinkless.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6335C952BE238A10078C0A6 /* stinkless.xcdatamodel */,
+			);
+			currentVersion = B6335C952BE238A10078C0A6 /* stinkless.xcdatamodel */;
+			path = stinkless.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B6335C7E2BE2389F0078C0A6 /* Project object */;
+}
