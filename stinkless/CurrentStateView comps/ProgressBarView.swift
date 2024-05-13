@@ -62,8 +62,12 @@ struct ProgressBarView: View {
     
     func getSuggestedIntervalSeconds() -> Int {
         // get number of intervals
-        var nrIntervals = 1 + (maxGoal - getCurrValue())
-        if nrIntervals < 1 {
+//        var nrIntervals = (maxGoal - getCurrValue()) + 1
+//        if nrIntervals < 1 {
+//            nrIntervals = 1
+//        }
+        var nrIntervals = (maxGoal - getCurrValue())
+        if nrIntervals <= 0 {
             nrIntervals = 1
         }
         
@@ -74,7 +78,8 @@ struct ProgressBarView: View {
         }
         
         // time at the end of the day
-        let endOfDay = calendar.date(byAdding: .day, value: 1, to: calendar.startOfDay(for: Date()))!.addingTimeInterval(-1)
+        // let endOfDay = calendar.date(byAdding: .day, value: 1, to: calendar.startOfDay(for: Date()))!.addingTimeInterval(-1)
+        let endOfDay = getClosestSleepTime().addingTimeInterval(-1)
         
         // get period of time between last recorded time and the end of the day
         let availableSeconds = endOfDay.timeIntervalSince(lastTime)
@@ -83,6 +88,36 @@ struct ProgressBarView: View {
         let intervalLengthSeconds = Int(availableSeconds / Double(nrIntervals))
         
         return intervalLengthSeconds
+    }
+    
+    func getClosestSleepTime() -> Date {
+        let sleepTime = getCurrentTimeValue(key: sleepTimeDefaultKey)
+        let currentDate = Date()
+        
+        // date components of now
+        let dcCurrentTime = calendar.dateComponents([.year, .month, .day], from: currentDate)
+        
+        // time components of sleep time
+        let dcSleepTime = calendar.dateComponents([.hour, .minute, .second], from: sleepTime)
+        
+        // combine date components
+        var combinedComponents = DateComponents()
+        combinedComponents.year = dcCurrentTime.year
+        combinedComponents.month = dcCurrentTime.month
+        combinedComponents.day = dcCurrentTime.day
+        combinedComponents.hour = dcSleepTime.hour
+        combinedComponents.minute = dcSleepTime.minute
+        combinedComponents.second = dcSleepTime.second
+        
+        // create combined date
+        let combinedDate = calendar.date(from: combinedComponents)!
+
+        // if the closest future date is in the past, add a day
+        if combinedDate < currentDate {
+            return calendar.date(byAdding: .day, value: 1, to: combinedDate)!
+        } 
+        return combinedDate
+        
     }
 }
 
