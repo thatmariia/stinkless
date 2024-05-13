@@ -14,7 +14,20 @@ func getCurrentIntValue(key: String) -> Int {
     return defaults.object(forKey: key) as? Int ?? 0
 }
 
+func getCurrentTimeValue(key: String) -> Date {
+    let dateString = defaults.string(forKey: key) ?? defaultSleepTimeString
+    return sleepTimeFormatter.date(from: dateString)!
+}
+
+func saveCurrentTimeValue(time: Date, key: String) {
+    let timeString = sleepTimeFormatter.string(from: time)
+    defaults.setValue(timeString, forKey: key)
+}
+
 let maxGoalDefaultKey = "maxGoalDefault"
+let sleepTimeDefaultKey = "sleepTimeDefault"
+
+let defaultSleepTimeString = "00:00 AM"
 
 let colorThemeKey = "colorTheme"
 

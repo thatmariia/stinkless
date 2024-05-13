@@ -48,3 +48,11 @@ let itemFormatter: DateFormatter = {
     formatter.dateFormat = "dd/MM/yy HH:mm:ss"
     return formatter
 }()
+
+let sleepTimeFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+//    formatter.dateStyle = .short
+//    formatter.timeStyle = .medium
+    formatter.dateFormat = "HH:mm"
+    return formatter
+}()

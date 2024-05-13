@@ -13,6 +13,7 @@ struct SettingsView: View {
     @Binding var colorScheme: ColorScheme?
     
     @State var maxGoal = getCurrentIntValue(key: maxGoalDefaultKey)
+    @State var sleepTime = getCurrentTimeValue(key: sleepTimeDefaultKey)
     
     var body: some View {
         VStack {
@@ -87,8 +88,53 @@ struct SettingsView: View {
                 }
             }
             
+            Divider().foregroundColor(.accentColor)
+            
+            // sleep time
+            HStack {
+                Text("Sleep time")
+                    .font(.system(size: 16, weight: .regular, design: .monospaced))
+                
+                Spacer()
+                
+                //Text(sleepTimeFormatter.string(from: sleepTime))
+                Button {
+                    let curr = getCurrentTimeValue(key: sleepTimeDefaultKey)
+                    let newTime = addMinutes(to: curr, minutes: -15)
+                    saveCurrentTimeValue(time: newTime, key: sleepTimeDefaultKey)
+                    sleepTime = newTime
+                    WidgetCenter.shared.reloadAllTimelines()
+                } label: {
+                    Image(systemName: "minus.circle.fill", variableValue: 1.00)
+                    .symbolRenderingMode(.monochrome)
+                    .font(.system(size: 16, weight: .regular))
+                }
+                .disabled(isDecreasingMaxGoalDisabled())
+                
+                Text(sleepTimeFormatter.string(from: sleepTime))
+                    .font(.system(size: 16, weight: .regular, design: .monospaced))
+                
+                Button {
+                    let curr = getCurrentTimeValue(key: sleepTimeDefaultKey)
+                    let newTime = addMinutes(to: curr, minutes: 15)
+                    saveCurrentTimeValue(time: newTime, key: sleepTimeDefaultKey)
+                    sleepTime = newTime
+                    WidgetCenter.shared.reloadAllTimelines()
+                } label: {
+                    Image(systemName: "plus.circle.fill", variableValue: 1.00)
+                    .symbolRenderingMode(.monochrome)
+                    .font(.system(size: 16, weight: .regular))
+                }
+                
+            }
+            
             Spacer()
         }
+    }
+    
+    func addMinutes(to time: Date, minutes: Int) -> Date {
+        let newTime = calendar.date(byAdding: .minute, value: minutes, to: time)!
+        return newTime
     }
     
     func setTheme(themeCode: Int) {
